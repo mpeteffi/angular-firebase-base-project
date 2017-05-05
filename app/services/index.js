@@ -1,9 +1,9 @@
 import angular from 'angular'
 
-// import service from './service'
+import loginService from './loginService'
 
 export default angular
 	.module('app.services', [
-		// service,
+		loginService,
 	])
 	.name
