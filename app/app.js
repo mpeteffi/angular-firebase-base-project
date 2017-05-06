@@ -1,6 +1,5 @@
 import angular from 'angular'
 
-import constants from './config/constants'
 import STATES from './config/states'
 import routes from './config/routes'
 import appRun from './config/run'
@@ -18,7 +17,6 @@ angular.module('app', [
 	libs,
 	services,
 ])
-.constant('AppConstants', constants)
 .constant('STATES', STATES)
 .config(routes)
 .run(appRun)

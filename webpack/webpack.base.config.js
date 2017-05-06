@@ -59,7 +59,7 @@ module.exports = (config) => {
 		{
 			test: /\.html$/,
 			use: [
-			{
+				{
 					loader: 'html-loader',
 					options: { minimize: false },
 				},
@@ -68,7 +68,7 @@ module.exports = (config) => {
 		{
 			test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
 			use: [
-			{
+				{
 					loader: 'url-loader',
 					options: { 
 						name: 'fonts/[name]',
@@ -80,7 +80,7 @@ module.exports = (config) => {
 		{
 			test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
 			use: [
-			{
+				{
 					loader: 'url-loader',
 					options: { 
 						name: 'fonts/[name]',
@@ -92,7 +92,7 @@ module.exports = (config) => {
 		{
 			test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
 			use: [
-			{
+				{
 					loader: 'url-loader',
 					options: { 
 						name: 'fonts/[name]',
@@ -104,7 +104,7 @@ module.exports = (config) => {
 		{
 			test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
 			use: [
-			{
+				{
 					loader: 'file-loader',
 					options: { name: 'fonts/[name]' },
 				},
@@ -113,7 +113,7 @@ module.exports = (config) => {
 		{
 			test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
 			use: [
-			{
+				{
 					loader: 'url-loader',
 					options: { 
 						name: 'fonts/[name]',
@@ -126,7 +126,7 @@ module.exports = (config) => {
 		{
 			test: /\.(jpe?g|png|gif|svg|ico)$/i,
 			use: [
-			{
+				{
 					loader: 'url-loader',
 					options: { name: 'img/[name].[ext]' },
 				},
