@@ -22,12 +22,12 @@ class LoginService {
 	*/
 	login({ email, password }) {
 		firebase.auth().signInWithEmailAndPassword(email, password)
-    .catch((error) => this.trataErrosLogin(error))
+    .catch((error) => this.trataLoginError(error))
 	}
 
 	logout() {
 		firebase.auth().signOut()
-    .catch((error) => this.trataErrosLogout(error))
+    .catch((error) => this.trataLogoutError(error))
 	}
 
 	/*
@@ -39,11 +39,9 @@ class LoginService {
 			if (user) {
 				console.log('mudou auth para logado')
 				isAutenticated = true
-				// redirecionar para pagina segura inicial
 			} else {
 				console.log('mudou auth para deslogado')
 				isAutenticated = false
-				// redirecionar para página de login
 			}
 		})
 	}
